@@ -29,9 +29,12 @@ public class Generator {
    }
    
    
-   public int generator4( ) {
-      // You supply this code.
-      return 0;
+   public int generator4( int forbidden) {
+      int x = randGen.nextInt(6) +1;
+      while(x== forbidden){
+         x= randGen.nextInt(6) +1;
+      }
+      return x;
    }
    
    
