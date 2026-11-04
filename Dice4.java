@@ -45,8 +45,14 @@ public class Dice4 {
     
     
     public void runTest12In24Rolls(int howMany)
-    {
-          //your code here    
+    {   
+          int count = 0,counter = 0;
+        while(counter < howMany){
+            if(takeATurnA12In24Rolls())
+                count++;
+            counter++;
+        }
+        System.out.println(count + " one 12 in 24 rolls tried " + howMany + " times : " + count * 1.0 / howMany);    
     }
     
     
